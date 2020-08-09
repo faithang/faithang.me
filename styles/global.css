@@ -1,44 +1,79 @@
 @import "burger.css";
+@import "fonts.css";
+
 html, body {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
+
 body {
-	background-color: #f1e6d9;
-	font-family: sans-serif;
+  background-color: #f1e6d9;
+  font-family: sans-serif;
 }
 
 /* header */
-
 header {
-	display: flex;
-	justify-content: space-between;
-	padding: 1em;
-	background-color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+  background-color: white;
+}
+
+.header-title {
+  font-family: 'regina', serif;
 }
 
 .brand {
-	max-width: 400px;
+  max-width: 400px;
 }
 
 .nav {
-	position: fixed;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	z-index: 100;
-	transform: translateX(100%);
-    transition: transform 250ms cubic-bezier(.5, 0, .5, 1);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  transform: translateX(100%);
+  transition: transform 250ms cubic-bezier(.5, 0, .5, 1);
 }
 
 /* main */
 #intro {
-	display: grid;
-	place-items: center;
+  display: grid;
+  place-items: center;
 }
+
 .big-head {
-	max-width: 100%;
-	max-width: 250px;
-	place-items: center;
+  width: 350px;
+  max-width: 50%;
+  min-width: 20%;
+  place-items: center;
+}
+
+.main-title {
+  font-family: 'regina', sans-serif;
+	color: #44413e;
+  font-size: 3rem;
+  padding-left: 10px;
+  padding-right: 10px;
+  z-index: 100;
+	margin-bottom: -2rem;
+}
+
+.desc-box {
+  background-color: white;
+	width: 30rem;
+  height: 5rem;
+	margin-bottom: 0;
+	padding: 2rem;
+	display: grid;
+	align-items: center;
+	justify-content: center;
+}
+
+.about-linkbox {
+	background-color: black;
+	width: 20rem;
+	height: 30px;
 }
