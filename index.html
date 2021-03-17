@@ -1,51 +1,64 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-
+<html lang="en">
+<!-- just type "!" and the boilerplate will autofill ;) -->
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="widt=device-width, initial-scale=1.0">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-	<script src="/js/burger.js"></script>
-	<title>Faith Ang | Portfolio</title>
-	<link rel="stylesheet" type="text/css" href="./styles/global.css" media="screen" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="css/main.css">
 </head>
-
 <body>
-	<header>
-		<div class="brand">
-			<div class="logo">
-			</div>
-			<div class="header-title">
-				Faith Ang
-			</div>
-		</div>
-		<div class="navigation">
-			<div class="burger burger-squeeze" style="font-size: 8px">
-				<div class="burger-lines">
-				</div>
-			</div>
-			<nav class="nav">
-				<ul class="nav__list">
-					<li class="nav__item"><a href="#" class="nav__link">Home</a></li>
-					<li class="nav__item"><a href="#" class="nav__link">About</a></li>
-					<li class="nav__item"><a href="#" class="nav__link">Work</a></li>
-				</ul>
-			</nav>
-		</div>
-	</header>
+    <header>
+        <div class="navbar">
+            <div class="container">
+                    <a href="#"><img id="logo" class="logo" src="images/logo.svg" alt="Website Logo"></a>
 
-	<div id="main-content">
-		<div id="intro">
-			<img class="big-head" src="/img/big-head.png" alt="main-logo">
-			<div class="main-title">Hello, I'm Faith.</div>
-			<div class="desc-box">
-				Business + Com Sci + Design = ?
+                    <img id="mobile-open" class="mobile-menu" src="images/menu.svg" alt="Open Navigation">
+                    <nav>
+                        <img id="mobile-exit" class="mobile-menu-exit" src="images/exit.svg" alt="Exit Navigation">
+                        <ul>
+                            <li class="current"><a href="index.html">Work</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="https://linkedin.com/in/faithang">LinkedIn</a></li>
+                        </ul>
+                    </nav>
+            </div>
+    </header>
+    </div>
 
-			</div>
-		</div>
-	</div>
+    <section class="hero">
+        <div class="container">
+            <div class="left-col">
+                <img src="images/waving.png" alt="" class="hero-img">
+            </div>
+            <div class="right-col">
+                <h1>Hey, I'm Faith!</h1>
+                <p class="tagline">I'm a recent graduate and UX designer based in sunny Singapore 🇸🇬</p>
 
-
+                <div class="hero-cta">
+                    <a href="#" class="blue-button">Get to know me ></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="main-content">
+        <h2>Work</h2>
+        <div class="container">
+            <img src="images/proj-covers/mobility-cover.png" alt="Redesigning Mobility" class="proj-cover">
+            <img src="images/proj-covers/yelp-cover.png" alt="Yelp Dine-In" class="proj-cover">
+            <img src="images/proj-covers/swat-cover.png" alt="SWAT Internship" class="proj-cover">
+            <img src="images/proj-covers/unilever-cover.png" alt="Unilever Hackathon" class="proj-cover">
+            <img src="images/proj-covers/navigo-cover.png" alt="Navigo Indoors Navigation" class="proj-cover">
+            <img src="images/proj-covers/psa-cover.png" alt="PSA Game It" class="proj-cover">
+            
+        </div>
+    </section>
+    <section class="footer">
+        <h2><a href="https://linkedin.com/in/faithang">Contact me on LinkedIn</a></h2>
+    </section>
+ <!-- put scripts at the end of body, so that it renders last -->
+ <script src="index.js"></script>  
 </body>
-
 </html>
+
