@@ -6,6 +6,7 @@
   --accent-1: #83b1a7;
   --accent-2: #6890ac;
   --body-text: #3b3f3e;
+  --body-text-light: rgba(59, 63, 62, .8);
   --trans: .3s;
 }
 
@@ -13,12 +14,12 @@ body {
   font-family: 'Rubik';
   margin: 0;
   background-color: var(--bg-color);
-  color: var(--body-text);
+  color: var(--body-text-light);
 }
 
 a {
   text-decoration: none;
-  color: var(--body-text);
+  color: var(--body-text-light);
 }
 
 h2 {
@@ -28,6 +29,7 @@ h2 {
   text-align: center;
   font-style: normal;
   font-weight: 500;
+  color: var(--body-text);
 }
 
 .cta-button {
@@ -102,6 +104,7 @@ h2 {
   opacity: .7;
   -webkit-transition-duration: var(--trans);
           transition-duration: var(--trans);
+  color: var(--body-text);
 }
 
 .navbar nav a:hover {
@@ -161,7 +164,6 @@ h2 {
 
 .hero .tagline {
   margin: auto;
-  color: rgba(59, 63, 62, 0.8);
   padding-top: 0rem;
   line-height: 125%;
   font-size: 1rem;
@@ -306,12 +308,13 @@ h2 {
   .hero .hero-img {
     max-width: 25rem;
   }
+  .hero .about-img {
+    max-width: 15rem;
+  }
   .hero h1 {
     font-size: 2.5rem;
     font-weight: 700;
-  }
-  .hero .tagline {
-    font-size: 1.5rem;
+    color: var(--body-text);
   }
   .hero .container {
     display: -webkit-box;
@@ -333,7 +336,17 @@ h2 {
   }
   .hero .container .right-col {
     text-align: left;
+    max-width: 50vw;
+  }
+  .hero .container .right-col .desc {
+    font-size: .8rem;
+  }
+  .hero .container .right-col {
+    text-align: left;
     max-width: 30vw;
+  }
+  .hero .container .right-col .tagline {
+    font-size: 1.5rem;
   }
   .hero .container .right-col .cta-button {
     margin-top: .5rem;

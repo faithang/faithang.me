@@ -7,6 +7,7 @@
     --accent-1: #83b1a7;
     --accent-2: #6890ac;
     --body-text: #3b3f3e;
+    --body-text-light: rgba(59, 63, 62, .8);
     --trans: .3s;
 
 }
@@ -15,12 +16,12 @@ body {
     font-family: 'Rubik';
     margin: 0;
     background-color: var(--bg-color);
-    color: var(--body-text);
+    color: var(--body-text-light);
 }
 
 a {
     text-decoration: none;
-    color: var(--body-text);
+    color: var(--body-text-light);
 }
 
 h2 {
@@ -30,6 +31,7 @@ h2 {
     text-align: center;
     font-style: normal;
     font-weight: 500;
+    color: var(--body-text);
 }
 
 .cta-button {
@@ -92,6 +94,7 @@ h2 {
             text-align: center;
             opacity: .7;
             transition-duration: var(--trans);
+            color: var(--body-text);
         }
 
         a:hover {
@@ -143,7 +146,6 @@ h2 {
 
     .tagline {
         margin: auto;
-        color: rgba(59,63,62,0.8);
         padding-top: 0rem;
         line-height: 125%;
         font-size: 1rem;
@@ -291,13 +293,14 @@ h2 {
             max-width: 25rem;
         }
 
+        .about-img {
+            max-width: 15rem;
+        }
+
         h1 {
             font-size: 2.5rem;
             font-weight: 700;
-        }
-
-        .tagline {
-            font-size: 1.5rem;
+            color: var(--body-text);
         }
 
         .container {
@@ -313,7 +316,20 @@ h2 {
 
             .right-col {
                 text-align: left;
+                max-width: 50vw;
+
+                .desc {
+                    font-size: .8rem;
+                }
+            }
+
+            .right-col {
+                text-align: left;
                 max-width: 30vw;
+
+                .tagline {
+                    font-size: 1.5rem;
+                }
 
                 .cta-button {
                     margin-top: .5rem;
@@ -321,6 +337,7 @@ h2 {
             }
         }
     }
+
     .main-content {
         padding: 1rem 2rem;
         padding-bottom: 2rem;
