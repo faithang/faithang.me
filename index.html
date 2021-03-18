@@ -8,20 +8,21 @@
     <title>Home</title>
     <link rel="shortcut icon" type="image/jpg" href="images/logo.png"/>
     <link rel="stylesheet" href="css/main.css">
+
 </head>
 <body>
     <header>
         <div class="navbar">
             <div class="container">
                     <a href="#"><img id="logo" class="logo" src="images/logo.svg" alt="Website Logo"></a>
-
+        
                     <img id="mobile-open" class="mobile-menu" src="images/menu.svg" alt="Open Navigation">
-                    <nav>
+                    <nav id="nav">
                         <img id="mobile-exit" class="mobile-menu-exit" src="images/exit.svg" alt="Exit Navigation">
                         <ul>
                             <li class="current"><a href="index.html">Work</a></li>
                             <li><a href="about.html">About</a></li>
-                            <li><a href="https://linkedin.com/in/faithang">LinkedIn</a></li>
+                            <li><a target="_blank" href="https://linkedin.com/in/faithang">Contact</a></li>
                         </ul>
                     </nav>
             </div>
@@ -38,13 +39,13 @@
                 <p class="tagline">I'm a recent graduate and UX designer based in sunny Singapore 🇸🇬</p>
 
                 <div class="hero-cta">
-                    <a href="#" class="cta-button">Get to know me ></a>
+                    <a href="about.html" class="cta-button">Get to know me ></a>
                 </div>
             </div>
         </div>
     </section>
     <section class="main-content">
-        <h2>Work</h2>
+        <h2>Projects</h2>
         <div class="container">
             <img src="images/proj-covers/mobility-cover.png" alt="Redesigning Mobility" class="proj-cover">
             <img src="images/proj-covers/yelp-cover.png" alt="Yelp Dine-In" class="proj-cover">
@@ -59,7 +60,7 @@
         <h2><a href="https://linkedin.com/in/faithang">Contact me on LinkedIn</a></h2>
     </section>
  <!-- put scripts at the end of body, so that it renders last -->
- <script src="index.js"></script>  
+ <script src="menu.js"></script>
 </body>
 </html>
 
