@@ -20,7 +20,15 @@ body {
 
 a {
   text-decoration: none;
-  color: var(--body-text-light);
+  color: var(--accent-2);
+  -webkit-transition-duration: var(--trans);
+          transition-duration: var(--trans);
+}
+
+a:hover {
+  opacity: .8;
+  -webkit-transition-duration: var(--trans);
+          transition-duration: var(--trans);
 }
 
 h2 {
@@ -239,6 +247,7 @@ h2 {
   font-weight: 400;
   font-size: .8rem;
   margin: 0;
+  color: var(--body-text-light);
   -webkit-transition-duration: var(--trans);
           transition-duration: var(--trans);
 }
