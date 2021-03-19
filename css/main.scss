@@ -9,6 +9,7 @@
     --body-text: #3b3f3e;
     --body-text-light: rgba(59, 63, 62, .8);
     --trans: .3s;
+    --radius: .2rem;
 
 }
 
@@ -26,7 +27,7 @@ a {
 
 h2 {
     text-transform: uppercase;
-    font-size: 0.8rem;
+    font-size: 1rem;
     letter-spacing: 0.25em;
     text-align: center;
     font-style: normal;
@@ -39,14 +40,14 @@ h2 {
     box-sizing: content-box;
     background-color: var(--accent-1);
     text-transform: uppercase;
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     color:white;
     letter-spacing: 0.25em;
     text-align: center;
     font-weight: 500;
-    border-radius: 0.2rem;
+    border-radius: var(--radius);
     border: 0.1rem solid var(--accent-1);
-    padding: .5rem .6rem;
+    padding: .6rem .7rem;
     transition-duration: var(--trans);
 }
 
@@ -148,7 +149,7 @@ h2 {
         margin: auto;
         padding-top: 0rem;
         line-height: 125%;
-        font-size: 1rem;
+        font-size: 1.2rem;
         font-weight: 400;
     }
 
@@ -191,6 +192,7 @@ h2 {
             opacity: 0.7;
             transition-duration: var(--trans);
             cursor: pointer;
+            border-radius: var(--radius);
         }
 
         .proj-cover:hover {
@@ -209,7 +211,7 @@ h2 {
         letter-spacing: 0.25em;
         text-align: center;
         font-weight: 400;
-        font-size: 0.7rem;
+        font-size: .8rem;
         margin: 0;
         transition-duration: var(--trans);
     }
@@ -219,6 +221,85 @@ h2 {
         transition-duration: var(--trans);
     }
 }
+
+
+.about {
+    .hero .container {
+
+        .left-col .hero-img {
+            width: 50vw;
+            max-width: 15rem;
+        }
+
+        .right-col .desc {
+            text-align: justify;
+
+            strong {
+                font-weight: 500;
+            }
+        }
+    }
+
+    .main-content .container {
+        display: grid;
+        text-align: center;
+        align-items: start;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 0.5rem;
+        width: 100%;
+
+        h2 {
+            margin-bottom: .5rem;
+        }
+
+        .table {
+            display: grid;
+            margin-bottom: .5rem;
+
+            .item {
+                margin: .5rem 0rem;
+
+                .b1 {
+                    font-weight: 500;
+                }
+
+                .b2 {
+                    
+                    a {
+                        color: var(--accent-2);
+                        transition-duration: var(--trans);
+                        &:hover {
+                            opacity: .8;
+                            transition-duration: var(--trans);
+                            
+                        }
+                    }
+                }
+
+                .b3 {
+                    color: rgba(59, 63, 62, .7);
+                }
+
+                .b4 {
+                    display: none;
+                }
+            }
+        }
+
+        .work {
+            grid-row-start: 1;
+            grid-row-end: 3;
+        }
+
+    }
+}
+
+
+
+
+
+
+/* DESKTOP VERSION */
 
 @media all and (min-width: 50rem) {
 
@@ -278,10 +359,6 @@ h2 {
         }
     }
 
-    h2 {
-        font-size: 1rem;
-    }
-
     .cta-button {
         font-size: .8rem;
         padding: .6rem .7rem;
@@ -316,16 +393,8 @@ h2 {
 
             .right-col {
                 text-align: left;
-                max-width: 50vw;
-
-                .desc {
-                    font-size: .8rem;
-                }
-            }
-
-            .right-col {
-                text-align: left;
                 max-width: 30vw;
+            }
 
                 .tagline {
                     font-size: 1.5rem;
@@ -334,7 +403,6 @@ h2 {
                 .cta-button {
                     margin-top: .5rem;
                 }
-            }
         }
     }
 
@@ -348,9 +416,40 @@ h2 {
         }
     }
 
-    .footer {
-        a {
-            font-size: .8rem;
+    .about {
+
+
+        .main-content .container {
+            grid-template-columns: 1fr 1fr;
+            text-align: left;
+            max-width: 60rem;
+            grid-gap: 2rem;
+
+            .item {
+                display: grid;
+                grid-template-areas: 
+                "title date"
+                "description description"
+                "additional additional";
+
+                .b1 {
+                    grid-area: title;
+                }
+                .b2 {
+                    grid-area: description;
+                }
+                .b3 {
+                    grid-area: date;
+                    text-align: right;
+                    color: rgba(59, 63, 62, 1);
+                }
+                .b4 {
+                    grid-area: additional;
+                    opacity: .7;
+                    display: block !important;
+                }
+            }
         }
     }
+
 }
