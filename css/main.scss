@@ -241,6 +241,10 @@ h2 {
             
         }
 
+        .right-col {
+            align-self: flex-end;
+        }
+
 
         .right-col .desc {
             text-align: justify;
@@ -257,7 +261,7 @@ h2 {
         align-items: start;
         grid-template-columns: repeat(1, 1fr);
         grid-gap: 0.5rem;
-        width: 100%;
+        max-width: 60rem;
 
         h2 {
             margin-bottom: .5rem;
@@ -311,7 +315,7 @@ h2 {
 
 /* DESKTOP VERSION */
 
-@media all and (min-width: 50rem) {
+@media all and (min-width: 760px) {
 
     .navbar {
         padding: 2rem;
@@ -378,6 +382,7 @@ h2 {
 
         .hero-img {
             max-width: 25rem;
+            align-self: flex-end;
         }
 
         .about-img {
@@ -423,6 +428,7 @@ h2 {
         .container {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
+            //max-width: 80vw;
         }
     }
 
