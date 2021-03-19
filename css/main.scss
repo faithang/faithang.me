@@ -133,7 +133,6 @@ h2 {
     }
 
     .hero-img {
-        align-self: center;
         width: 75vw;
         max-width: 20rem;
         margin-bottom: 0;
@@ -150,7 +149,7 @@ h2 {
         padding-top: 0rem;
         line-height: 125%;
         font-size: 1.2rem;
-        font-weight: 400;
+        font-weight: 300;
     }
 
     .hero-cta {
@@ -225,11 +224,16 @@ h2 {
 
 .about {
     .hero .container {
+        margin: auto;
 
-        .left-col .hero-img {
-            width: 50vw;
-            max-width: 15rem;
+        .left-col {
+
+            img {
+                max-width: 15rem;
+            }
+            
         }
+
 
         .right-col .desc {
             text-align: justify;
@@ -290,7 +294,6 @@ h2 {
             grid-row-start: 1;
             grid-row-end: 3;
         }
-
     }
 }
 
@@ -417,6 +420,17 @@ h2 {
     }
 
     .about {
+
+        .hero .container {
+            align-items: center;
+            align-self: center;
+            justify-self: center;
+            max-width: 60rem;
+
+            .right-col {
+                max-width: 60vw;
+            }
+        }
 
 
         .main-content .container {
