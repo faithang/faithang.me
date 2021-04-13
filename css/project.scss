@@ -1,0 +1,111 @@
+.project {
+    .hero {
+        .container {
+            display: flex;
+            align-items: flex-start;
+    
+            .left-col {
+                vertical-align: top;
+                // background: lightpink;
+                margin-right: 1.5rem;
+                width: 100%;
+                
+
+                .byline {
+                    text-transform: uppercase;
+                    font-weight: 500;
+                    display: inline-block;
+                    background-color: var(--accent-1);
+                    padding: .3rem .5rem;
+                    color: white;
+                    border-radius: var(--radius);
+                }
+            }
+    
+            .right-col {
+                // background: lightblue;
+                
+                table {
+                    td {
+                        padding-bottom: .5rem;
+                        text-align: left;
+                    }
+                    th {
+                        text-align: right;
+                        vertical-align: top;
+                        text-transform: uppercase;
+                        padding-bottom: .5rem;
+                        padding-right: 1rem;
+                        font-weight: 500;
+                        color: var(--accent-1);
+                    }
+                }
+
+            }
+    
+            
+    
+        }
+    }
+    
+    .main-content {
+        .container {
+            display: block;
+
+            h2 {
+                margin-bottom: 0rem;
+            }
+
+            p {
+                text-align: justify;
+            }
+
+            img {
+                width: 100%;
+                border-radius: var(--radius);
+            }
+
+            strong {
+                color: var(--accent-1);
+                font-weight: 500;
+            }
+        }
+    }
+}
+
+@media all and (min-width: 760px) {
+    .project {
+        .hero {
+            .container {
+                .left-col {
+                    width: 20vw;
+                    text-align: right;
+                }
+            }
+        }
+        
+        .main-content {
+            .container {
+                max-width: 50rem;
+
+                img {
+                    display: block;
+                    margin: auto;
+                    
+                }
+
+                .small-img {
+                    max-width: 30rem;
+                }
+
+                li {
+                    text-align: justify;
+                }
+
+                h2 {
+                    margin-top: 2rem;
+                }
+            }
+        }
+    }
+}

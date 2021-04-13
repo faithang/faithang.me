@@ -1,0 +1,85 @@
+.project .hero .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.project .hero .container .left-col {
+  vertical-align: top;
+  margin-right: 1.5rem;
+  width: 100%;
+}
+
+.project .hero .container .left-col .byline {
+  text-transform: uppercase;
+  font-weight: 500;
+  display: inline-block;
+  background-color: var(--accent-1);
+  padding: .3rem .5rem;
+  color: white;
+  border-radius: var(--radius);
+}
+
+.project .hero .container .right-col table td {
+  padding-bottom: .5rem;
+  text-align: left;
+}
+
+.project .hero .container .right-col table th {
+  text-align: right;
+  vertical-align: top;
+  text-transform: uppercase;
+  padding-bottom: .5rem;
+  padding-right: 1rem;
+  font-weight: 500;
+  color: var(--accent-1);
+}
+
+.project .main-content .container {
+  display: block;
+}
+
+.project .main-content .container h2 {
+  margin-bottom: 0rem;
+}
+
+.project .main-content .container p {
+  text-align: justify;
+}
+
+.project .main-content .container img {
+  width: 100%;
+  border-radius: var(--radius);
+}
+
+.project .main-content .container strong {
+  color: var(--accent-1);
+  font-weight: 500;
+}
+
+@media all and (min-width: 760px) {
+  .project .hero .container .left-col {
+    width: 20vw;
+    text-align: right;
+  }
+  .project .main-content .container {
+    max-width: 50rem;
+  }
+  .project .main-content .container img {
+    display: block;
+    margin: auto;
+  }
+  .project .main-content .container .small-img {
+    max-width: 30rem;
+  }
+  .project .main-content .container li {
+    text-align: justify;
+  }
+  .project .main-content .container h2 {
+    margin-top: 2rem;
+  }
+}
+/*# sourceMappingURL=project.css.map */

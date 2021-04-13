@@ -1,0 +1,128 @@
+.about {
+    .hero .container {
+        margin: auto;
+
+        .left-col {
+
+            img {
+                max-width: 15rem;
+            }
+            
+        }
+
+        .right-col {
+            align-self: flex-end;
+        }
+
+
+        .right-col .desc {
+            text-align: justify;
+
+            strong {
+                font-weight: 500;
+            }
+        }
+    }
+
+    .main-content .container {
+        display: grid;
+        text-align: center;
+        align-items: start;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 0.5rem;
+        max-width: 60rem;
+
+        h2 {
+            margin-bottom: .5rem;
+        }
+
+        .table {
+            display: grid;
+            margin-bottom: .5rem;
+
+            .item {
+                margin: .5rem 0rem;
+
+                .b1 {
+                    font-weight: 500;
+                }
+
+                .b2 {
+                    
+                    a {
+                        color: var(--accent-2);
+                        transition-duration: var(--trans);
+                        &:hover {
+                            opacity: .8;
+                            transition-duration: var(--trans);
+                            
+                        }
+                    }
+                }
+
+                .b3 {
+                    color: rgba(59, 63, 62, .7);
+                }
+
+                .b4 {
+                    display: none;
+                }
+            }
+        }
+
+        .work {
+            grid-row-start: 1;
+            grid-row-end: 3;
+        }
+    }
+}
+
+/* DESKTOP VERSION */
+@media all and (min-width: 760px) {
+    .about {
+
+        .hero .container {
+            align-items: center;
+            align-self: center;
+            justify-self: center;
+            max-width: 60rem;
+
+            .right-col {
+                max-width: 60vw;
+            }
+        }
+
+
+        .main-content .container {
+            grid-template-columns: 1fr 1fr;
+            text-align: left;
+            max-width: 60rem;
+            grid-gap: 2rem;
+
+            .item {
+                display: grid;
+                grid-template-areas: 
+                "title date"
+                "description description"
+                "additional additional";
+
+                .b1 {
+                    grid-area: title;
+                }
+                .b2 {
+                    grid-area: description;
+                }
+                .b3 {
+                    grid-area: date;
+                    text-align: right;
+                    color: rgba(59, 63, 62, 1);
+                }
+                .b4 {
+                    grid-area: additional;
+                    opacity: .7;
+                    display: block !important;
+                }
+            }
+        }
+    }
+}
