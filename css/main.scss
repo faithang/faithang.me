@@ -191,7 +191,7 @@ h2 {
         text-align: center;
         align-items: center;
         grid-template-columns: repeat(1, 1fr);
-        grid-gap: 0.5rem;
+        grid-gap: 0.3rem 0.5rem;
         margin: 0;
         width: 100%;
 
@@ -212,8 +212,11 @@ h2 {
 }
 
 .footer {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     padding: 2rem 1rem;
+    margin: auto;
 
     a, .contact {
         text-transform: uppercase;
@@ -362,6 +365,9 @@ h2 {
         }
     }
     
-    
+.footer {
+    max-width: 50rem;
+    flex-direction: row;
+}    
 
 }
