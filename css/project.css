@@ -84,10 +84,23 @@
   .project .main-content .container .row {
     display: -ms-grid;
     display: grid;
-    width: 100%;
     grid-gap: .5rem;
+  }
+  .project .main-content .container .row img {
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .project .main-content .container .two-col {
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
+  }
+  .project .main-content .container .three-col {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+  .project .main-content .container .four-col {
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
   }
   .project .main-content .container .no-gap {
     grid-gap: 0;

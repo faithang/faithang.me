@@ -111,9 +111,24 @@
 
                 .row {
                     display: grid;
-                    width: 100%;
                     grid-gap: .5rem;
+
+                    img {
+                        object-fit: contain;
+                    }
+                    
+                }
+
+                .two-col {
                     grid-template-columns: repeat(2, 1fr);
+                }
+                
+                .three-col {
+                    grid-template-columns: repeat(3, 1fr);
+                }
+
+                .four-col {
+                    grid-template-columns: repeat(4,1fr);
                 }
 
                 .no-gap {

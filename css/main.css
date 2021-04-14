@@ -200,6 +200,10 @@ h2 {
           align-items: center;
 }
 
+.main-content .inactive {
+  opacity: .25;
+}
+
 .main-content h2 {
   display: inline-block;
   font-weight: 400;
@@ -254,6 +258,15 @@ h2 {
   margin: auto;
 }
 
+.footer .logo {
+  display: inline-block;
+  height: .8rem;
+  stroke: var(--accent-2);
+  fill: var(--accent-2);
+  background-color: var(--accent-2);
+  top: .1rem;
+}
+
 .footer a, .footer .contact {
   text-transform: uppercase;
   letter-spacing: 0.25em;
@@ -262,6 +275,7 @@ h2 {
   font-size: .8rem;
   margin: 0;
   color: var(--body-text-light);
+  fill: var(--body-text-light);
   -webkit-transition-duration: var(--trans);
           transition-duration: var(--trans);
 }
@@ -342,6 +356,9 @@ h2 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
