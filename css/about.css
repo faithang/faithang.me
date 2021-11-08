@@ -1,14 +1,5 @@
-.about .hero .container {
-  margin: auto;
-}
-
-.about .hero .container .left-col img {
-  max-width: Min(17rem, 50vw);
-}
-
-.about .hero .container .right-col {
-  -ms-flex-item-align: end;
-      align-self: flex-end;
+.about .hero .container .left-col {
+  max-width: Min(55vw, 12rem);
 }
 
 .about .hero .container .right-col .desc {
@@ -28,8 +19,8 @@
           align-items: start;
   -ms-grid-columns: (1fr)[1];
       grid-template-columns: repeat(1, 1fr);
-  grid-gap: 0.5rem;
-  max-width: Min(75vw, 60rem);
+  grid-gap: 2rem;
+  max-width: Min(90vw, 60rem);
 }
 
 .about .main-content .container h2 {
@@ -39,12 +30,12 @@
 .about .main-content .container .table {
   display: -ms-grid;
   display: grid;
-  margin-bottom: .5rem;
+  margin-bottom: 2rem;
 }
 
 .about .main-content .container .table .item {
   text-align: left;
-  margin: .5rem 0rem;
+  margin: 1rem 0rem;
 }
 
 .about .main-content .container .table .item .b1 {
@@ -90,28 +81,17 @@
   grid-row-end: 3;
 }
 
-/* DESKTOP VERSION */
-@media all and (min-width: 760px) {
-  .about .hero .container {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
-    -ms-grid-column-align: center;
-        justify-self: center;
-    max-width: Min(75vw, 60rem);
-  }
-  .about .hero .container .right-col {
-    max-width: 60vw;
+/* TABLET VERSION */
+@media all and (min-width: 740px) {
+  .about .left-col {
+    max-width: Min(30vw, 16rem) !important;
   }
   .about .main-content .container {
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
     text-align: left;
-    max-width: Min(75vw, 60rem);
-    grid-gap: 2rem;
+    max-width: Min(90vw, 60rem);
+    grid-gap: 3rem;
   }
   .about .main-content .container .item {
     display: -ms-grid;

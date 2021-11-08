@@ -9,7 +9,7 @@
     --body-text: #3b3f3e;
     --body-text-light: rgba(59, 63, 62, .8);
     --trans: .3s;
-    --radius: .2rem;
+    --radius: .35rem;
 
 }
 
@@ -139,19 +139,25 @@ h2 {
 
 .hero {
     text-align: center;
-    padding: 1rem 2rem;
+    padding: 2rem 0rem;
 
     .container {
         margin: auto;
         display: flex;
         flex-direction: column;
         align-items: center;
-        max-width: Min(75vw, 60rem);
+        max-width: Min(90vw, 60rem); 
+        // background-color: mistyrose;
+    }
+
+    .left-col {
+        max-width: Min(80vw, 18rem); //doodle
+        // background-color: mistyrose;
     }
 
     .hero-img {
-        width: 75vw;
-        max-width: Min(75vw, 20rem);
+        width: 100%;
+        margin-bottom: 0;
     }
 
     h1 {
@@ -166,11 +172,12 @@ h2 {
         line-height: 125%;
         font-size: 1.2rem;
         font-weight: 300;
+        max-width: 35rem;
     }
 
     .hero-cta {
         display: block;
-        padding-top: .5rem;
+        margin-top: 1rem;
         text-decoration: none;
     }
 
@@ -180,13 +187,17 @@ h2 {
 
 .main-content {
     background-color: white;
-    padding: 1rem;
+    padding: 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
 
     .inactive {
         opacity: .25;
+    }
+
+    h1 {
+        margin-top: 2rem;
     }
 
     h2 {
@@ -205,15 +216,14 @@ h2 {
         margin: 0;
         width: 100%;
     }
-
     .container {
         display: grid;
         text-align: left;
         align-items: center;
         grid-template-columns: repeat(1, 1fr);
-        grid-gap: 0.5rem 0.8rem;
+        grid-gap: 0.6rem 1rem;
         margin: 0;
-        width: 100%;
+        max-width: Min(90vw, 60rem);
 
         .proj-cover {
             object-fit: contain;
@@ -233,7 +243,7 @@ h2 {
 
 .footer {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     justify-content: space-between;
     padding: 2rem 1rem;
     margin: auto;
@@ -273,9 +283,9 @@ h2 {
 
 
 
-/* DESKTOP VERSION */
+/* TABLET VERSION */
 
-@media all and (min-width: 760px) {
+@media all and (min-width: 740px) {
 
     .navbar {
         padding: 2rem;
@@ -333,16 +343,7 @@ h2 {
         }
     }
 
-    .cta-button {
-        font-size: .8rem;
-        padding: .6rem .7rem;
-    }
-
     .hero {
-
-        .hero-img {
-            max-width: 25rem;
-        }
 
         h1 {
             font-size: 2.5rem;
@@ -352,19 +353,24 @@ h2 {
 
         .container {
             display: flex;
-            flex-direction: row;
-            padding: 0rem 2rem;
-            align-self: flex-end;
+            flex-direction: row-reverse;
             justify-content: center;
+            align-items: flex-end;
 
             .left-col {
-                margin-bottom: -1.25rem;
+                margin-bottom: -2.45rem;
+                padding-left: 1rem;
+                align-self: flex-end;
+                max-width: Min(40vw, 25rem); //doodle
             }
 
             .right-col {
                 text-align: left;
-                max-width: 30vw;
+                padding-right: 1rem;
+                align-self: flex-end;
             }
+
+                
 
                 .tagline {
                     font-size: 1.5rem;
@@ -376,27 +382,39 @@ h2 {
         }
     }
 
+    .cta-button {
+        font-size: .8rem;
+        padding: .6rem .7rem;
+    }
+
+    
+
 
     .index {
         .main-content {
-            padding: 1rem 2rem;
-            padding-bottom: 2rem;
+            padding: 2rem 3rem;
+            padding-bottom: 3rem;
 
             .container {
                 display: grid;
                 grid-template-columns: repeat(2, 1fr);
-                max-width: Min(75vw, 60rem);
+                max-width: Min(90vw, 60rem);
             }
 
             .row {
-                max-width: Min(75vw, 60rem);
+                max-width: Min(90vw, 60rem);
             }
         }
     }
     
 .footer {
-    max-width: 50rem;
+    max-width: Min(90vw, 60rem);
     flex-direction: row;
 }    
+
+.wider {
+    max-width: Min(90vw, 80rem)!important;
+}
+
 
 }

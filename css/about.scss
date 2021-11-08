@@ -1,20 +1,9 @@
 .about {
     .hero .container {
-        margin: auto;
 
         .left-col {
-
-            img {
-                max-width: Min(17rem, 50vw);
-            }
-            
+            max-width: Min(55vw, 12rem); //doodle
         }
-
-        .right-col {
-            align-self: flex-end;
-        }
-
-
         .right-col .desc {
             text-align: justify;
 
@@ -29,8 +18,8 @@
         text-align: center;
         align-items: start;
         grid-template-columns: repeat(1, 1fr);
-        grid-gap: 0.5rem;
-        max-width: Min(75vw, 60rem);
+        grid-gap: 2rem;
+        max-width: Min(90vw, 60rem);
 
         h2 {
             margin-bottom: .5rem;
@@ -38,11 +27,11 @@
 
         .table {
             display: grid;
-            margin-bottom: .5rem;
+            margin-bottom: 2rem;
 
             .item {
                 text-align: left;
-                margin: .5rem 0rem;
+                margin: 1rem 0rem;
 
                 .b1 {
                     font-weight: 500;
@@ -90,30 +79,21 @@
     }
 }
 
-/* DESKTOP VERSION */
-@media all and (min-width: 760px) {
+/* TABLET VERSION */
+@media all and (min-width: 740px) {
     .about {
 
-        .hero .container {
-            align-items: center;
-            align-self: center;
-            justify-self: center;
-            max-width: Min(75vw, 60rem);
-
-
-            .right-col {
-                max-width: 60vw;
-            }
+        .left-col {
+            max-width: Min(30vw, 16rem)!important; //doodle
         }
-
 
         .main-content {
 
         .container {
             grid-template-columns: 1fr 1fr;
             text-align: left;
-            max-width: Min(75vw, 60rem);
-            grid-gap: 2rem;
+            max-width: Min(90vw, 60rem);
+            grid-gap: 3rem;
 
             .item {
                 display: grid;
@@ -151,4 +131,5 @@
         }
     }
 }
+
 }

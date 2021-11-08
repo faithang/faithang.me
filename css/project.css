@@ -2,19 +2,13 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  max-width: Min(75vw, 60rem);
 }
 
-.project .hero .container .left-col {
-  vertical-align: top;
-  margin-right: 1.5rem;
+.project .hero .container .title-box {
   width: 100%;
 }
 
-.project .hero .container .left-col .tag {
+.project .hero .container .title-box .tag {
   text-transform: uppercase;
   font-weight: 500;
   display: inline-block;
@@ -24,6 +18,24 @@
   letter-spacing: 0.1rem;
   color: white;
   border-radius: var(--radius);
+}
+
+.project .hero .container .right-col {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  border-radius: var(--radius);
+  outline: 0.2em solid var(--light-accent);
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+.project .hero .container .right-col table {
+  margin-left: auto;
+  margin-right: auto;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 .project .hero .container .right-col table td {
@@ -43,6 +55,11 @@
 
 .project .main-content .container {
   display: block;
+  max-width: Min(90vw, 60rem);
+}
+
+.project .main-content .container h1 {
+  margin-top: 3rem;
 }
 
 .project .main-content .container h2 {
@@ -74,15 +91,19 @@
   vertical-align: middle;
   text-align: left;
   margin-bottom: 1rem;
+  border-radius: var(--radius);
 }
 
-@media all and (min-width: 760px) {
-  .project .hero .container .left-col {
-    width: 20vw;
-    text-align: right;
+/* TABLET VERSION */
+@media all and (min-width: 740px) {
+  .project .hero .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .project .main-content .container {
-    max-width: Min(75vw, 60rem);
+    max-width: Min(90vw, 60rem);
   }
   .project .main-content .container img {
     display: block;
@@ -93,9 +114,6 @@
   }
   .project .main-content .container li {
     text-align: justify;
-  }
-  .project .main-content .container h2 {
-    margin-top: 2rem;
   }
   .project .main-content .container .row {
     display: -ms-grid;
