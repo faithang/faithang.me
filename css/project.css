@@ -5,6 +5,7 @@
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  max-width: Min(75vw, 60rem);
 }
 
 .project .hero .container .left-col {
@@ -13,12 +14,14 @@
   width: 100%;
 }
 
-.project .hero .container .left-col .byline {
+.project .hero .container .left-col .tag {
   text-transform: uppercase;
-  font-weight: 400;
+  font-weight: 500;
   display: inline-block;
   background-color: var(--accent-1);
   padding: .3rem .5rem;
+  font-size: .8rem;
+  letter-spacing: 0.1rem;
   color: white;
   border-radius: var(--radius);
 }
@@ -60,13 +63,26 @@
   font-weight: 500;
 }
 
+.project .main-content .container .callout {
+  background-color: var(--bg-color);
+  padding: 2rem;
+  font-weight: 300;
+  font-size: 1.2rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  vertical-align: middle;
+  text-align: left;
+  margin-bottom: 1rem;
+}
+
 @media all and (min-width: 760px) {
   .project .hero .container .left-col {
     width: 20vw;
     text-align: right;
   }
   .project .main-content .container {
-    max-width: 50rem;
+    max-width: Min(75vw, 60rem);
   }
   .project .main-content .container img {
     display: block;
@@ -89,6 +105,11 @@
   .project .main-content .container .row img {
     -o-object-fit: contain;
        object-fit: contain;
+  }
+  .project .main-content .container .row .callout {
+    -ms-flex-item-align: stretch;
+        -ms-grid-row-align: stretch;
+        align-self: stretch;
   }
   .project .main-content .container .two-col {
     -ms-grid-columns: (1fr)[2];

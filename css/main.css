@@ -20,6 +20,7 @@ body {
   margin: 0;
   background-color: var(--bg-color);
   color: var(--body-text-light);
+  line-height: 1.5;
 }
 
 a {
@@ -51,14 +52,14 @@ h2 {
           box-sizing: content-box;
   background-color: var(--accent-2);
   text-transform: uppercase;
-  font-size: 0.8rem;
+  font-size: 0.75rem;
   color: white;
   letter-spacing: 0.25em;
   text-align: center;
   font-weight: 500;
   border-radius: var(--radius);
   border: 0.1rem solid var(--accent-2);
-  padding: .6rem .7rem;
+  padding: .4rem .5rem;
   -webkit-transition-duration: var(--trans);
           transition-duration: var(--trans);
 }
@@ -70,6 +71,7 @@ h2 {
   background-color: white;
   -webkit-transition-duration: var(--trans);
           transition-duration: var(--trans);
+  text-decoration: none;
 }
 
 .navbar {
@@ -118,12 +120,14 @@ h2 {
   -webkit-transition-duration: var(--trans);
           transition-duration: var(--trans);
   color: var(--body-text);
+  text-decoration: none !important;
 }
 
 .navbar nav a:hover {
   background-color: var(--light-accent);
   -webkit-transition-duration: var(--trans);
           transition-duration: var(--trans);
+  text-decoration: none !important;
 }
 
 .navbar nav ul {
@@ -148,6 +152,7 @@ h2 {
 }
 
 .hero .container {
+  margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -158,12 +163,12 @@ h2 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  max-width: Min(75vw, 60rem);
 }
 
 .hero .hero-img {
   width: 75vw;
-  max-width: 20rem;
-  margin-bottom: 0;
+  max-width: Min(75vw, 20rem);
 }
 
 .hero h1 {
@@ -183,6 +188,7 @@ h2 {
 .hero .hero-cta {
   display: block;
   padding-top: .5rem;
+  text-decoration: none;
 }
 
 .main-content {
@@ -210,18 +216,29 @@ h2 {
   padding-bottom: .2em;
   border-bottom: 0.2em solid var(--light-accent);
   margin-bottom: 1rem;
+  text-align: left;
+}
+
+.main-content .row {
+  display: block;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
+  width: 100%;
 }
 
 .main-content .container {
   display: -ms-grid;
   display: grid;
-  text-align: center;
+  text-align: left;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -ms-grid-columns: (1fr)[1];
       grid-template-columns: repeat(1, 1fr);
-  grid-gap: 0.3rem 0.5rem;
+  grid-gap: 0.5rem 0.8rem;
   margin: 0;
   width: 100%;
 }
@@ -230,7 +247,7 @@ h2 {
   -o-object-fit: contain;
      object-fit: contain;
   width: 100%;
-  opacity: 0.7;
+  opacity: 0.6;
   -webkit-transition-duration: var(--trans);
           transition-duration: var(--trans);
   cursor: pointer;
@@ -341,11 +358,6 @@ h2 {
   }
   .hero .hero-img {
     max-width: 25rem;
-    -ms-flex-item-align: end;
-        align-self: flex-end;
-  }
-  .hero .about-img {
-    max-width: 15rem;
   }
   .hero h1 {
     font-size: 2.5rem;
@@ -361,8 +373,8 @@ h2 {
         -ms-flex-direction: row;
             flex-direction: row;
     padding: 0rem 2rem;
-    -ms-flex-item-align: center;
-        align-self: center;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -389,6 +401,10 @@ h2 {
     display: grid;
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
+    max-width: Min(75vw, 60rem);
+  }
+  .index .main-content .row {
+    max-width: Min(75vw, 60rem);
   }
   .footer {
     max-width: 50rem;

@@ -22,6 +22,8 @@ body {
     margin: 0;
     background-color: var(--bg-color);
     color: var(--body-text-light);
+    line-height: 1.5;
+    // line-height: 1.3rem;
 }
 
 a {
@@ -50,14 +52,14 @@ h2 {
     box-sizing: content-box;
     background-color: var(--accent-2);
     text-transform: uppercase;
-    font-size: 0.8rem;
+    font-size: 0.75rem;
     color:white;
     letter-spacing: 0.25em;
     text-align: center;
     font-weight: 500;
     border-radius: var(--radius);
     border: 0.1rem solid var(--accent-2);
-    padding: .6rem .7rem;
+    padding: .4rem .5rem;
     transition-duration: var(--trans);
 }
 
@@ -66,6 +68,7 @@ h2 {
     color: var(--accent-2);
     background-color: white;
     transition-duration: var(--trans);
+    text-decoration: none;
 }
 
 .navbar {
@@ -106,11 +109,13 @@ h2 {
             opacity: .7;
             transition-duration: var(--trans);
             color: var(--body-text);
+            text-decoration: none !important;
         }
 
         a:hover {
             background-color: var(--light-accent);
             transition-duration: var(--trans);
+            text-decoration: none!important;
         }
 
         ul {
@@ -137,15 +142,16 @@ h2 {
     padding: 1rem 2rem;
 
     .container {
+        margin: auto;
         display: flex;
         flex-direction: column;
         align-items: center;
+        max-width: Min(75vw, 60rem);
     }
 
     .hero-img {
         width: 75vw;
-        max-width: 20rem;
-        margin-bottom: 0;
+        max-width: Min(75vw, 20rem);
     }
 
     h1 {
@@ -165,6 +171,7 @@ h2 {
     .hero-cta {
         display: block;
         padding-top: .5rem;
+        text-decoration: none;
     }
 
         
@@ -188,21 +195,30 @@ h2 {
         padding-bottom: .2em;
         border-bottom: .2em solid var(--light-accent);
         margin-bottom: 1rem;
+        text-align: left;
+    }
+
+    .row {
+        display: block;
+        text-align: center;
+        align-items: center;
+        margin: 0;
+        width: 100%;
     }
 
     .container {
         display: grid;
-        text-align: center;
+        text-align: left;
         align-items: center;
         grid-template-columns: repeat(1, 1fr);
-        grid-gap: 0.3rem 0.5rem;
+        grid-gap: 0.5rem 0.8rem;
         margin: 0;
         width: 100%;
 
         .proj-cover {
             object-fit: contain;
             width: 100%;
-            opacity: 0.7;
+            opacity: 0.6;
             transition-duration: var(--trans);
             cursor: pointer;
             border-radius: var(--radius);
@@ -326,11 +342,6 @@ h2 {
 
         .hero-img {
             max-width: 25rem;
-            align-self: flex-end;
-        }
-
-        .about-img {
-            max-width: 15rem;
         }
 
         h1 {
@@ -343,7 +354,7 @@ h2 {
             display: flex;
             flex-direction: row;
             padding: 0rem 2rem;
-            align-self: center;
+            align-self: flex-end;
             justify-content: center;
 
             .left-col {
@@ -374,7 +385,11 @@ h2 {
             .container {
                 display: grid;
                 grid-template-columns: repeat(2, 1fr);
-                //max-width: 80vw;
+                max-width: Min(75vw, 60rem);
+            }
+
+            .row {
+                max-width: Min(75vw, 60rem);
             }
         }
     }

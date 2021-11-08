@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,700;1,400;1,500&display=swap');
+
+:root {
+    --bg-color: #F6F6F6;
+    --light-accent: #d5e5e2;
+    --mid-accent: #b2cec8;
+    --accent-1: #83b1a7;
+    --accent-2: #6890ac;
+    --body-text: #3b3f3e;
+    --body-text-light: rgba(59, 63, 62, .8);
+    --trans: .3s;
+    --radius: .2rem;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+    color: var(--accent-2);
+    transition-duration: var(--trans);
+    
+    &:hover {
+        opacity: .8;
+        transition-duration: var(--trans);
+    }
+}
+
+.navbar {
+    padding: 1rem;
+    background-color: var(--bg-color);
+ 
+     .logo {
+         height: 2rem;
+     }
+ 
+     .mobile-menu, .mobile-menu-exit {
+         height: 1.2rem;
+         cursor: pointer;
+     }
+ 
+     .container {
+         display: flex;
+         place-content: space-between;
+         align-items: center;
+     }
+ 
+     nav {
+         position: fixed;
+         z-index: 999;
+         width: 66%;
+         max-width: 20rem;
+         right: -22rem;
+         top: 0;
+         height: 100vh;
+         padding: 1rem;
+         background-color: rgba(255,255,255,.95);
+         transition-duration: .3s;
+ 
+         a {
+             display: block;
+             padding: 1rem;
+             text-align: center;
+             opacity: .7;
+             transition-duration: var(--trans);
+             color: var(--body-text);
+             text-decoration: none;
+         }
+ 
+         a:hover {
+             background-color: var(--light-accent);
+             transition-duration: var(--trans);
+         }
+ 
+         ul {
+             margin-top: 5rem;
+             margin-left: 0;
+             padding-left: 0;
+         }
+ 
+         li {
+             list-style-type: none;
+             margin: 0;
+         }
+ 
+         .mobile-menu-exit {
+             float: right;
+             margin-top: .5rem;
+         }
+     }
+ 
+ }

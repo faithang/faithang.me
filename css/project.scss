@@ -3,6 +3,7 @@
         .container {
             display: flex;
             align-items: flex-start;
+            max-width: Min(75vw, 60rem);
     
             .left-col {
                 vertical-align: top;
@@ -11,12 +12,14 @@
                 width: 100%;
                 
 
-                .byline {
+                .tag {
                     text-transform: uppercase;
-                    font-weight: 400;
+                    font-weight: 500;
                     display: inline-block;
                     background-color: var(--accent-1);
                     padding: .3rem .5rem;
+                    font-size: .8rem;
+                    letter-spacing: 0.1rem;
                     color: white;
                     border-radius: var(--radius);
                 }
@@ -72,6 +75,17 @@
 
             .row {
             }
+
+            .callout {
+                background-color: var(--bg-color);
+                padding: 2rem;
+                font-weight: 300;
+                font-size: 1.2rem;
+                align-items: center;
+                vertical-align: middle;
+                text-align: left;
+                margin-bottom: 1rem;
+            }
         }
     }
 }
@@ -89,7 +103,7 @@
         
         .main-content {
             .container {
-                max-width: 50rem;
+                max-width: Min(75vw, 60rem);
 
                 img {
                     display: block;
@@ -115,6 +129,10 @@
 
                     img {
                         object-fit: contain;
+                    }
+
+                    .callout {
+                        align-self: stretch;
                     }
                     
                 }
