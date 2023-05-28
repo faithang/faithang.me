@@ -1,2 +1,5 @@
 # Ignore password protected project pages 
 /projects/passwordprotected/*
+
+#Ignore env file 
+.env
