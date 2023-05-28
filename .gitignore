@@ -1,0 +1,2 @@
+# Ignore password protected project pages 
+/projects/passwordprotected/*

@@ -73,6 +73,7 @@
 .project .main-content .container img {
   width: 100%;
   border-radius: var(--radius);
+  border: 1px solid var(--body-text);
 }
 
 .project .main-content .container strong {
@@ -143,6 +144,10 @@
   }
   .project .main-content .container .no-gap {
     grid-gap: 0;
+  }
+
+  b {
+    font-weight: 500;
   }
 }
 /*# sourceMappingURL=project.css.map */
